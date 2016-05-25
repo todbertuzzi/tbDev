@@ -1,0 +1,74 @@
+[25-May-2016 14:54:24 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "header.twig" (looked into: /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master, /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/views, ) in "prova.twig" at line 5. in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('header.twig')
+#1 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('header.twig')
+#2 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(378): Twig_Environment->getTemplateClass('header.twig', NULL)
+#3 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Template.php(286): Twig_Environment->loadTemplate('header.twig', NULL) in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 215
+[25-May-2016 14:54:29 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "header.twig" (looked into: /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master, /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/views, ) in "prova.twig" at line 5. in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('header.twig')
+#1 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('header.twig')
+#2 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(378): Twig_Environment->getTemplateClass('header.twig', NULL)
+#3 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Template.php(286): Twig_Environment->loadTemplate('header.twig', NULL) in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 215
+[25-May-2016 14:54:40 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "header.twig" (looked into: /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master, /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/views, ) in "prova.twig" at line 5. in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('header.twig')
+#1 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('header.twig')
+#2 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(378): Twig_Environment->getTemplateClass('header.twig', NULL)
+#3 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Template.php(286): Twig_Environment->loadTemplate('header.twig', NULL) in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 215
+[25-May-2016 14:55:53 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "header.twig" (looked into: /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master, /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/views, ) in "prova.twig" at line 5. in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('header.twig')
+#1 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('header.twig')
+#2 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(378): Twig_Environment->getTemplateClass('header.twig', NULL)
+#3 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Template.php(286): Twig_Environment->loadTemplate('header.twig', NULL) in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 215
+[25-May-2016 14:57:28 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "header.twig" (looked into: /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master, /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/views, ) in "prova.twig" at line 5. in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('header.twig')
+#1 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('header.twig')
+#2 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(378): Twig_Environment->getTemplateClass('header.twig', NULL)
+#3 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Template.php(286): Twig_Environment->loadTemplate('header.twig', NULL) in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 215
+[25-May-2016 14:57:31 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "header.twig" (looked into: /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master, /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/views, ) in "prova.twig" at line 5. in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('header.twig')
+#1 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('header.twig')
+#2 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(378): Twig_Environment->getTemplateClass('header.twig', NULL)
+#3 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Template.php(286): Twig_Environment->loadTemplate('header.twig', NULL) in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 215
+[25-May-2016 14:57:40 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 13
+[25-May-2016 14:58:13 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 13
+[25-May-2016 14:58:14 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 13
+[25-May-2016 14:58:16 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 13
+[25-May-2016 14:58:19 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 13
+[25-May-2016 14:58:41 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "header.twig" (looked into: /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master, /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/views, ) in "prova.twig" at line 5. in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('header.twig')
+#1 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('header.twig')
+#2 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(378): Twig_Environment->getTemplateClass('header.twig', NULL)
+#3 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Template.php(286): Twig_Environment->loadTemplate('header.twig', NULL) in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 215
+[25-May-2016 14:59:01 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "header.twig" (looked into: /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master, /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/views, ) in "prova.twig" at line 5. in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('header.twig')
+#1 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('header.twig')
+#2 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(378): Twig_Environment->getTemplateClass('header.twig', NULL)
+#3 /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Template.php(286): Twig_Environment->loadTemplate('header.twig', NULL) in /srv/www/tbDev/htdocs/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 215
+[25-May-2016 15:06:22 UTC] PHP Parse error:  syntax error, unexpected '$context' (T_VARIABLE), expecting ',' or ')' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 13
+[25-May-2016 15:06:31 UTC] PHP Fatal error:  Uncaught Error: Class 'imber' not found in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php:12
+Stack trace:
+#0 /srv/www/tbDev/htdocs/wp-includes/template-loader.php(75): include()
+#1 /srv/www/tbDev/htdocs/wp-blog-header.php(19): require_once('/srv/www/tbDev/...')
+#2 /srv/www/tbDev/htdocs/index.php(17): require('/srv/www/tbDev/...')
+#3 {main}
+  thrown in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 12
+[25-May-2016 15:06:32 UTC] PHP Fatal error:  Uncaught Error: Class 'imber' not found in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php:12
+Stack trace:
+#0 /srv/www/tbDev/htdocs/wp-includes/template-loader.php(75): include()
+#1 /srv/www/tbDev/htdocs/wp-blog-header.php(19): require_once('/srv/www/tbDev/...')
+#2 /srv/www/tbDev/htdocs/index.php(17): require('/srv/www/tbDev/...')
+#3 {main}
+  thrown in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 12
+[25-May-2016 15:08:54 UTC] PHP Parse error:  syntax error, unexpected 'Timber' (T_STRING) in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 12
+[25-May-2016 15:40:04 UTC] PHP Parse error:  syntax error, unexpected ',' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 12
+[25-May-2016 15:40:06 UTC] PHP Parse error:  syntax error, unexpected ',' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 12
+[25-May-2016 15:40:08 UTC] PHP Parse error:  syntax error, unexpected ',' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 12
+[25-May-2016 15:40:10 UTC] PHP Parse error:  syntax error, unexpected ',' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 12
+[25-May-2016 15:40:11 UTC] PHP Parse error:  syntax error, unexpected ',' in /srv/www/tbDev/htdocs/wp-content/themes/timber-foundation-theme-master/prova.php on line 12
