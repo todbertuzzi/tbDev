@@ -42,7 +42,13 @@
 			add_filter( 'the_content', 'underwood_img_unautop', 30 );
 
 		} /* end underwood_startup */
+
+
 	}
+
+
+	
+	
 
 	/**
 	 * WP_HEAD GOODNESS

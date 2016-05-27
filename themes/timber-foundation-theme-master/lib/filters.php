@@ -2,6 +2,8 @@
 
 add_filter('post_gallery', 'foundationGallery', 10, 2);
 
+
+
 function foundationGallery($string, $attr) {
 
     $context               = Timber::get_context();
@@ -15,3 +17,6 @@ function foundationGallery($string, $attr) {
      
     return Timber::compile('gallery.twig', $context);
 }
+
+
+
