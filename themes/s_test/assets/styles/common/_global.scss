@@ -1,1 +1,27 @@
-
+ // Add/remove floats
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.float-none {
+  float: none;
+}
+.clear {
+  clear: both;
+}
+// Text alignment
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+// Apply capital case to an element
+.caps {
+  text-transform: uppercase;
+}

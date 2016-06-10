@@ -15,6 +15,10 @@ function body_class($classes) {
     }
   }
 
+  if(is_front_page()){
+     $classes[] = 'tod-homepage';
+  }
+
   // Add class if sidebar is active
   if (Setup\display_sidebar()) {
     $classes[] = 'sidebar-primary';
@@ -31,3 +35,5 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+

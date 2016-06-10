@@ -15,7 +15,9 @@ $sage_includes = [
   'lib/setup.php',     // Theme setup
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
-  'lib/customizer.php' // Theme customizer
+  'lib/customizer.php', // Theme customizer
+  'lib/wp_bootstrap_navwalker.php' // Nav Bootstrap
+
 ];
 
 foreach ($sage_includes as $file) {
@@ -26,3 +28,9 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+function add_menuclass($ulclass) {
+return preg_replace('/<a rel="fancybox"/', '<a  class="menu__link"', $ulclass, 9);
+}
+add_filter('wp_nav_menu','add_menuclass');
+

@@ -27,8 +27,14 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'sage')
+    'primary_navigation' => __('Primary Navigation', 'sage'),
+    //'mobile_navigation' => __('Primary mobile', 'sage')
+
   ]);
+  
+
+
+
 
   // Enable post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
@@ -86,6 +92,7 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-custom.php'),
+    is_page_template('template-fullwidth.php')
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
@@ -102,5 +109,25 @@ function assets() {
   }
 
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
+
+  /* TOD ASSETS */
+  wp_enqueue_script('theme_homepage', Assets\asset_path('scripts/test-tod.js'), ['jquery'], null, true);
+
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+
+
+
+/* TOD BACKGROUND IMAGE*/
+add_theme_support('custom-background');
+
+$args = array(
+  'width'         => 560,
+  'height'        => 120,
+  'default-image' => get_template_directory_uri() . '/images/custom-header.jpg',
+  'uploads'       => true,
+);
+add_theme_support( 'custom-header', $args );
+
+
