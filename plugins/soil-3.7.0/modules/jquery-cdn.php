@@ -8,6 +8,8 @@ namespace Roots\Soil\JqueryCDN;
  * You can enable/disable this feature in functions.php (or lib/setup.php if you're using Sage):
  * add_theme_support('soil-jquery-cdn');
  */
+
+
 function register_jquery() {
   $jquery_version = wp_scripts()->registered['jquery']->ver;
 
@@ -23,7 +25,8 @@ function register_jquery() {
 
   add_filter('script_loader_src', __NAMESPACE__ . '\\jquery_local_fallback', 10, 2);
 }
-add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\register_jquery', 100);
+
+//add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\register_jquery', 100);
 
 /**
  * Output the local fallback immediately after jQuery's <script>
@@ -44,4 +47,4 @@ function jquery_local_fallback($src, $handle = null) {
 
   return $src;
 }
-add_action('wp_head', __NAMESPACE__ . '\\jquery_local_fallback');
+//add_action('wp_head', __NAMESPACE__ . '\\jquery_local_fallback');

@@ -27,11 +27,16 @@ get_header(); ?>
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
-
+			
 		// End the loop.
 		endwhile;
 		?>
-
+		 
+  <h1><?php 
+echo '<pre>';
+var_dump(get_field('tes'));
+echo '</pre>';
+   ?></h1>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 

@@ -23,7 +23,7 @@ if($query->have_posts()) :
 <div class="fl-clear"></div>
 <?php endif; ?>
 <?php
-
+ 
 // Render the pagination.
 if($settings->pagination != 'none' && $query->have_posts()) :
 

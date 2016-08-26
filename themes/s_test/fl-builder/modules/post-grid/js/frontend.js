@@ -10,7 +10,7 @@
 		this.matchHeight	= settings.matchHeight;
 
 		
-		console.log(settings.wrapperClass+ " "+this.wrapperClass )
+		
 
 
 

@@ -34,3 +34,17 @@ return preg_replace('/<a rel="fancybox"/', '<a  class="menu__link"', $ulclass, 9
 }
 add_filter('wp_nav_menu','add_menuclass');
 
+
+// Password Protected Page Message
+function my_password_form() {
+    global $post;
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+    $o = '<form class="post-password-form" action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
+    ' . __( "<span class='messaggioPassword'> Per accedere a questa pagina devi inserire la password <br>, se non ne hai una puoi richiederla a questa mail: ELEMENTIKAIROS@GMAIL.COM </span>" ) . '
+    <label for="' . $label . '">' . __( "Password:" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" /><input type="submit" name="Submit" value="' . esc_attr__( "Invia" ) . '" />
+    </form>
+    ';
+    return $o;
+}
+add_filter( 'the_password_form', 'my_password_form' );
+

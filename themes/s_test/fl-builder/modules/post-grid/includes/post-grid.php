@@ -1,10 +1,14 @@
 
+<?php  
+$value = get_field( "colore" ); 
+?>
 
-<figure class="fl-post-grid-post effect-romeo" itemscope itemtype="<?php FLPostGridModule::schema_itemtype(); ?>">
-	
+<figure class="fl-post-grid-post " itemscope itemtype="<?php FLPostGridModule::schema_itemtype();?>" data-colore="	<?php echo $value ?>">	
+
 	<?php FLPostGridModule::schema_meta(); ?>
 
 	<?php if(has_post_thumbnail() && $settings->show_image) : ?>
+	
 	<div class="fl-post-grid-image">
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 			<?php the_post_thumbnail($settings->image_size); ?>

@@ -88,7 +88,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 				$atts['aria-haspopup']	= 'true';
 			} else {
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '';
-				$atts['class']			= 'menu__link';
+				$atts['class']			= 'menu__link,animsition-link';
 			}
 
 			$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );

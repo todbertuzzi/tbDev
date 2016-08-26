@@ -15,7 +15,7 @@ class FLPostGridModule extends FLBuilderModule {
 			'description'   	=> __('Display a grid of your WordPress posts.', 'fl-builder'),
 			'category'      	=> __('Advanced Modules', 'fl-builder'),
 			'editor_export' 	=> false,
-			'partial_refresh'	=> true
+			'partial_refresh'	=> false
 		));
 	}
 
@@ -26,6 +26,7 @@ class FLPostGridModule extends FLBuilderModule {
 	{
 		if(FLBuilderModel::is_builder_active() || $this->settings->layout == 'grid' || $this->settings->layout == 'grid-mod' || $this->settings->layout == 'grid-svg'  ) {
 			$this->add_js('jquery-masonry');
+		
 		}
 		if(FLBuilderModel::is_builder_active() || $this->settings->layout == 'gallery') {
 			$this->add_js('fl-gallery-grid');
@@ -173,6 +174,20 @@ FLBuilder::register_module('FLPostGridModule', array(
 					    'description'   => __( 'Classe aggiuntiva per il wrapper', 'fl-builder' ),
 					    'help'          => __( 'Text displayed in the help tooltip', 'fl-builder' )
 					),
+					'layout_style_new'       => array(
+							'type'          => 'select',
+							'label'         => __('Change Style', 'fl-builder'),
+							'default'       => 'marley',
+							'options'       => array(
+							'romeo'             => __('romeo', 'fl-builder'),	
+							'bubba'             => __('bubba', 'fl-builder'),
+							'marley'             => __('marley', 'fl-builder'),
+							'goliath'		 => __('goliath', 'fl-builder'),
+							'steve'		 => __('steve', 'fl-builder'),
+							'milo'		 => __('milo', 'fl-builder')
+							)
+					),	
+					
 					'pagination'     => array(
 						'type'          => 'select',
 						'label'         => __('Pagination Style', 'fl-builder'),

@@ -28,13 +28,12 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage'),
-    //'mobile_navigation' => __('Primary mobile', 'sage')
-
+    'menu_sx' => __('Menu Sinistra', 'sage'),
+    'menu_dx' => __('Menu Destra', 'sage'),
+    'mobile_navigation' => __('Primary mobile', 'sage')
   ]);
+
   
-
-
-
 
   // Enable post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
@@ -69,6 +68,7 @@ function widgets_init() {
     'after_title'   => '</h3>'
   ]);
 
+  
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
@@ -77,26 +77,41 @@ function widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);
+  
+
 }
+
+
+
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 
 /**
  * Determine which pages should NOT display the sidebar
  */
-function display_sidebar() {
+function display_sidebar($valueSideBar) {
   static $display;
 
-  isset($display) || $display = !in_array(true, [
+    isset($display) || $display = !in_array(true, [
     // The sidebar will NOT be displayed if ANY of the following return true.
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
+    is_page(),
     is_page_template('template-custom.php'),
-    is_page_template('template-fullwidth.php')
+    is_page_template('template-fullwidth.php'),
+    is_page_template('template-testpage.php'),
+    is_singular( 'portfolio' ) 
   ]);
-
-  return apply_filters('sage/display_sidebar', $display);
+    
+    
+     return apply_filters('sage/display_sidebar', $display);
+    
 }
+
+
+/*is_singular( $post_types );*/
+
+
 
 /**
  * Theme assets
@@ -112,22 +127,32 @@ function assets() {
 
   /* TOD ASSETS */
   wp_enqueue_script('theme_homepage', Assets\asset_path('scripts/test-tod.js'), ['jquery'], null, true);
+  
+  /*
+  wp_enqueue_script('theme_homepage', Assets\asset_path('scripts/jquery.smoothState.min.js'), ['jquery'], null, true);
+  wp_enqueue_script('theme_homepage', Assets\asset_path('scripts/sanp.svg.js'), ['jquery'], null, true);
+  */
 
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 
 
 
+/*
+TOD -> Dynamically add Bootstrap column classes to footer widgets, depending on how many widgets are present
+*/
+// Dynamically add Bootstrap column classes to footer widgets, depending on how many widgets are present
 
-/* TOD BACKGROUND IMAGE*/
-add_theme_support('custom-background');
-
-$args = array(
-  'width'         => 560,
-  'height'        => 120,
-  'default-image' => get_template_directory_uri() . '/images/custom-header.jpg',
-  'uploads'       => true,
-);
-add_theme_support( 'custom-header', $args );
+function footer_sidebar_params($params) {
+    $sidebar_id = $params[0]['id'];
+    if ( $sidebar_id == 'sidebar-footer' ) {
+        $total_widgets = wp_get_sidebars_widgets();
+        $sidebar_widgets = count($total_widgets[$sidebar_id]);
+        $sidebar_widgets=$sidebar_widgets-1;
+        $params[0]['before_widget'] = str_replace('<section class="widget ', '<section class="widget col-md-' . floor(12 / $sidebar_widgets) . ' ', $params[0]['before_widget']);
+    }
+    return $params;
+}
+add_filter('dynamic_sidebar_params',__NAMESPACE__ .'\\footer_sidebar_params' ); 
 
 

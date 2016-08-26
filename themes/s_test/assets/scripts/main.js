@@ -28,6 +28,7 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        //$('body').fadeIn(4000); // fadein time in ms
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

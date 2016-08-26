@@ -22,7 +22,7 @@ msgid "Sorry, no results were found."
 msgstr ""
 
 #: lib/extras.php:31
-msgid "Continued"
+msgid "More"
 msgstr ""
 
 #: lib/setup.php:30

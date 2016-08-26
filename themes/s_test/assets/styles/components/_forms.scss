@@ -21,20 +21,40 @@ button:focus {
     outline: none;
 }
 
+.wpcf7-form-control-wrap:hover+.input__label {
+    font-family: 'Slabo 27px', serif;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.wpcf7-validation-errors {
+    border: 2px solid #d94f5c !important;
+    color: #000 !important;
+    font-family: "Slabo 27px";
+    text-transform: uppercase;
+}
+
+span.wpcf7-not-valid-tip {
+    color: #d94f5c !important;
+    font-size: 1em;
+    font-family: "Slabo 27px"; 
+    display: block;
+    text-transform: uppercase;
+    display: none !important;
+}
+
+
+p.formTopLabel {
+    color: #888 !important;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
 /* Juro  Forms*/
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:200,500,700,800);
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
 
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'codropsicons';
-	src:url('../fonts/codropsicons/codropsicons.eot');
-	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
-		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
-		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
-}
+
 .input__field {
 	z-index: 10;
 	padding: 0.75em 0.1em 0.25em;
@@ -42,7 +62,7 @@ button:focus {
 	/*background: transparent;
 	color: #afb3b8;*/
 	background-color: #eee;
-    color: #da7071;
+    color: #000;
 }
 
 .input__label {
@@ -50,7 +70,7 @@ button:focus {
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
-	color: #dadada;
+	olor: #dadada !important;
 	text-align: left;
 }
 
@@ -77,7 +97,7 @@ button:focus {
 	top: 0;
 	left: 0;
 	padding: 0.75em 0.15em;
-	color: #da7071;
+	color: #000;
 	opacity: 0;
 	-webkit-transform: translate3d(0, 50%, 0);
 	transform: translate3d(0, 50%, 0);
@@ -89,7 +109,7 @@ button:focus {
 }
 
 .wpcf7-form-control-wrap:hover + .input__label::before {
-	background-color: #da7071;
+	background-color: #000;
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
 }
@@ -136,3 +156,20 @@ button:focus {
     border-color: #ccc;
     border-width: 3px;
 }
+
+
+.post-password-form {
+    padding-top: 100px;
+    text-align: center;
+}
+.messaggioPassword {
+    line-height: 20px;
+    text-transform: uppercase;
+     font-family: 'Slabo 27px';
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    color: $brand-primary;
+}
+
+   

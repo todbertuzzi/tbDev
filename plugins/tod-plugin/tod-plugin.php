@@ -5,20 +5,17 @@ Description: Site specific code changes for example.com
 */
 /* Start Adding Functions Below this Line */
 
-function wpb_add_google_fonts() {
 
-wp_enqueue_style( 'wpb-google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300', false ); 
-}
 
-add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+require_once('custom-type.php');
 
-require_once('portfolio-type.php');
+
 
 add_filter('excerpt_length', 'my_excerpt_length');
  
 function my_excerpt_length($length) {
  
-    return 25; 
+    return 5; 
  
 }
  
