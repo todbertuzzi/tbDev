@@ -27,8 +27,9 @@ $args=array(
 			$termsString .= $term->slug.' '; //create a string that has all the slugs 
 		}
 	?> 
-	<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?>
 	<div class="<?php echo $termsString; ?> isotope-item item progetto"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
+	<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+	
 	<svg width="100%" height="100%" class="frameProgettiThumb">
 		<line class="top_pt" x1="0" y1="0" x2="900" y2="0"></line>
 		<line class="left_pt" x1="0" y1="210" x2="0" y2="-420"></line>
@@ -40,8 +41,9 @@ $args=array(
 	        <?php if ( has_post_thumbnail() ) { 
                       the_post_thumbnail('original-portfolio');
                 } ?>
-	</div> <!-- end item -->
 	</a>
+	</div> <!-- end item -->
+	
     <?php endwhile;  ?>
     </div> <!-- end isotope-list -->
 <?php endif; ?>

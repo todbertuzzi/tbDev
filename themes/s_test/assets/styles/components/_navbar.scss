@@ -1,11 +1,11 @@
-#menu-menu-dx li.current_page_item {
+#menu-menu-dx li.current_page_item , #menu-menu-dx li.current-menu-item {
     background-color: #333;
     @include border-right-radius(10px);
 	@include border-bottom-radius(10px);
  //   max-width: 150px;
 }
 
-#menu-menu-sx li.current_page_item {
+#menu-menu-sx li.current_page_item, #menu-menu-sx li.current-menu-item {
     background-color: #333;
     @include border-left-radius(10px);
 	@include border-top-radius(10px);
@@ -16,7 +16,8 @@
 }
 
 
-li.current_page_item a {
+
+li.current_page_item a , li.current-menu-item a {
     color: #fff !important;
    // padding: 5px !important;
    padding-top: 5px;

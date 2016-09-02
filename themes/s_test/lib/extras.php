@@ -133,3 +133,32 @@ function progetti_register() {
     register_post_type( 'progetti' , $args );  
 }
 
+
+// AGGIUNGO AI MENU ITEM LA CLASSA CURRENT-MENU-ITEM SE VISUALIZZO UN SINGLE CUSTOM POST COLLEGATO ALLA VOCE DI MENU (es: cosa facciamo->progetti )
+// RIF: http://wordpress.stackexchange.com/questions/56305/show-current-item-in-custom-menu-when-inside-a-custom-post-type
+
+add_filter( 'nav_menu_css_class',__NAMESPACE__ . '\\additional_active_item_classes', 10, 2 );
+
+function additional_active_item_classes($classes = array(), $menu_item = false){
+    global $wp_query;
+
+    if(in_array('current-menu-item', $menu_item->classes)){
+        $classes[] = 'current-menu-item';
+
+    }
+
+    if ( $menu_item->post_name == 'cosa-facciamo' && is_post_type_archive('progetti') ) {
+        $classes[] = 'current-menu-item';
+
+    }
+
+    if ( $menu_item->post_name == 'cosa-facciamo' && is_singular('progetti') ) {
+        $classes[] = 'current-menu-item';
+       
+
+    }
+    
+    return $classes;
+}
+
+
