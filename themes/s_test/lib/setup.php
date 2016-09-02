@@ -100,7 +100,9 @@ function display_sidebar($valueSideBar) {
     is_page_template('template-custom.php'),
     is_page_template('template-fullwidth.php'),
     is_page_template('template-testpage.php'),
-    is_singular( 'portfolio' ) 
+     is_archive(),
+    is_singular( 'portfolio' ),
+    is_singular( 'progetti' )  
   ]);
     
     

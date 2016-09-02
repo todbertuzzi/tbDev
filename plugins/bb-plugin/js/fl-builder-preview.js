@@ -1508,6 +1508,7 @@
 			
 			parent.removeClass('fl-col-group-align-top');
 			parent.removeClass('fl-col-group-align-center');
+			parent.removeClass('fl-col-group-align-bottom');
 			
 			if(this.elements.columnHeight.val() == 'yes') {
 				parent.addClass('fl-col-group-equal-height');
@@ -1873,7 +1874,7 @@
 		 * @param  {String} weight The selected weight.
 		 */
 		_buildFontStylesheet: function( id, font, weight ){
-			var url     = '//fonts.googleapis.com/css?family=',
+			var url     = FLBuilderConfig.googleFontsUrl,
 				href    = '',
 				fontObj = {},
 				fontArray = {};

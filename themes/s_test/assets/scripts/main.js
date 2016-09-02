@@ -27,6 +27,7 @@
     // Home page
     'home': {
       init: function() {
+        addHomeToggles();
         // JavaScript to be fired on the home page
         //$('body').fadeIn(4000); // fadein time in ms
       },

@@ -16,7 +16,7 @@ use Roots\Sage\Wrapper;
     <![endif]-->
     <?php
       do_action('get_header');
-      get_template_part('templates/header-bs');
+      get_template_part('templates/header-split');
     ?>
     <div class="wrap container" role="document">
       <div class="content row">

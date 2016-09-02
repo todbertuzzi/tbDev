@@ -183,6 +183,11 @@ final class FLBuilderIcons {
 		// Loop through uploaded sets.
 		foreach ( $folders as $folder ) {
 			
+			// Make sure we have a directory.
+			if ( ! is_dir( $folder ) ) {
+				continue;
+			}
+			
 			$folder = trailingslashit( $folder );
 			
 			// This is an Icomoon font.
@@ -332,6 +337,9 @@ final class FLBuilderIcons {
 				foreach ( $module->settings->$setting as $key => $val ) {
 					if ( isset( $val->$name ) ) {
 						self::enqueue_styles_for_icon( $val->$name );
+					}
+					else if( $name == $key && ! empty( $val ) ) {
+						self::enqueue_styles_for_icon( $val );
 					}
 				}
 			}

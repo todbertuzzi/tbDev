@@ -100,3 +100,36 @@ function the_excerpt_max_charlength($charlength) {
 }
 
 
+
+// Registro custom taxonomy Progetti
+add_action( 'init', __NAMESPACE__ . '\\create_progetti_taxonmies' );
+function create_pitch_video_taxonmies() {
+register_taxonomy(
+        'genere',
+        'progetti',
+        array(
+            'label' => __( 'Genere' ),
+            'rewrite' => array( 'slug' => 'genere' ),
+            'hierarchical' => true,
+        )
+    );
+}
+
+// Registro custom post Progetti
+add_action('init', __NAMESPACE__ . '\\progetti_register');  
+function progetti_register() {  
+    $args = array(  
+        'label' => __('Progetti'),  
+        'singular_label' => __('progetto'),  
+        'public' => true,  
+        'show_ui' => true,  
+        'capability_type' => 'post',  
+        'hierarchical' => true,  
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'progetti'),
+        'supports' => array('title', 'editor', 'thumbnail')  
+       );  
+   
+    register_post_type( 'progetti' , $args );  
+}
+

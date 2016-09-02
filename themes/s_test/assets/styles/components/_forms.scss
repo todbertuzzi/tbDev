@@ -22,22 +22,22 @@ button:focus {
 }
 
 .wpcf7-form-control-wrap:hover+.input__label {
-    font-family: 'Slabo 27px', serif;
-    font-size: 19px;
+    font-family:  $main-font;;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
 .wpcf7-validation-errors {
     border: 2px solid #d94f5c !important;
     color: #000 !important;
-    font-family: "Slabo 27px";
+    font-family:  $main-font;;
     text-transform: uppercase;
 }
 
 span.wpcf7-not-valid-tip {
     color: #d94f5c !important;
     font-size: 1em;
-    font-family: "Slabo 27px"; 
+    font-family:  $main-font;; 
     display: block;
     text-transform: uppercase;
     display: none !important;
@@ -52,7 +52,6 @@ p.formTopLabel {
 
 /* Juro  Forms*/
 
-@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
 
 
 .input__field {
@@ -152,6 +151,11 @@ p.formTopLabel {
    border:none
 }
 
+.input__label-content{
+	 text-transform: uppercase;
+     font-family:  $main-font;;
+}
+
 .input textarea {
     border-color: #ccc;
     border-width: 3px;
@@ -165,7 +169,7 @@ p.formTopLabel {
 .messaggioPassword {
     line-height: 20px;
     text-transform: uppercase;
-     font-family: 'Slabo 27px';
+     font-family:  $main-font;;
     font-style: normal;
     font-weight: 400;
     display: block;

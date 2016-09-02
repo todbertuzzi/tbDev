@@ -54,3 +54,41 @@
  }
 }
 
+h2, h3,.fl-rich-text p, .fl-accordion-button-label, .fl-accordion-content{
+  font-family: $main-font;
+}
+
+
+p {
+   & strong{
+      color: $brand-primary;
+    }
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+/* Different positions */
+
+.ribbonHolder{
+  height: 0;
+}
+
+.corner-ribbon.top-right{
+    top: -45px;
+    left: 37%;
+    right: 0;
+    position: relative;
+    height: 100px;
+    z-index: 999;
+}
+.corner-ribbon.top-right svg{
+transform: rotateZ(-10deg);
+}
